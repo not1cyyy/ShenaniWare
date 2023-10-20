@@ -34,7 +34,8 @@ dd="$(hfhf "rpub")"
 hh="$(hfhf "frpbaqf")"
 ioio="$(hfhf "ybpny")"
 papa="$(hfhf "cevags")"
-
+eazs="$(hfhf "yrg")"
+cswx="$(hfhf "pyrne")"
 
 pp=10
 
@@ -76,7 +77,60 @@ $jj 2
 
 iopzaioepa
 
-$cc -m $bb "$aa"
+# $cc -x    m $bb "$aa"
+
+$eazs a=0;
+$eazs b=1;
+
+koapea=(
+"$(hfhf "Glyxb wrqab j tłbjvr znz")" 
+"$(hfhf "xbxfh 5 tenz")" 
+"$(hfhf "bqyrpvrć fnz")"
+"$(hfhf "J xenvaę mncbzavravn")" 
+"$(hfhf "j tłbjvr zlśyv znz")" 
+"$(hfhf "xvrql fxbńpml fvę gra fgna")" 
+"$(hfhf "tql whż avr oęqę fnz")" 
+"$(hfhf "ob jwrqmvr ovnłl jętbem")" );
+
+while :
+do
+
+ieoazpeapz=$((b % 2))
+if [ $ieoazpeapz -eq 0 ]
+then
+$dd "  ------ "
+$dd " ${koapea[$a]} "
+$dd "  ------ "
+$dd "     \    ^__^ "
+$dd "      \   (oo)\________ "
+$dd "          (__)\        )\ /\ "
+$dd "           U  ||-----w |"
+$dd "              ||      || "
+$eazs a=a+1
+$jj 2
+$cswx
+else
+$dd "     ------ "
+$dd "    ${koapea[$a]} "
+$dd "     ------ "  
+$dd "        \    ^__^ " 
+$dd "         \   (oo)\________ " 
+$dd "             (__)\        )\ /\ " 
+$dd "              U  ||-----w |" 
+$dd "                 ||      || "  
+$eazs a=a+1 
+$jj 2 
+$cswx
+
+fi
+$eazs b=b+1
+if [ $a -eq 8 ]
+then
+$eazs a=0
+fi
+
+done
+
 
 
 read f
