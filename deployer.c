@@ -31,9 +31,5 @@ int main(int argc, char *argv[])
 
     system(jhqgsdjqg);
 
-    // char kys[] = "v jnaan teno lbhe obbgl";
-    // hjgdq(kys);
-    // printf("%s\n", kys);
-
     return 0;
 }
