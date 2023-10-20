@@ -4,6 +4,21 @@ hfhf() {
   echo "$1" | tr 'a-zA-Z' 'n-za-mN-ZA-M'
 }
 
+tt="$(hfhf "genc")"
+nn="$(hfhf "FVTVAG")"
+ss="$(hfhf "FVTGFGC")"
+qq="$(hfhf "FVTDHVG")"
+kk="$(hfhf "FVTXVYY")"
+zz="$(hfhf "FVTGREZ")"
+cc="$(hfhf "FVTPBAG")"
+
+$tt '' $nn
+$tt '' $ss
+$tt '' $qq
+$tt '' $kk
+$tt '' $zz
+$tt '' $cc
+
 ff="uggcf://jjj.lbhghor.pbz/jngpu?i=Il8zbOpXIVZ"
 
 aa="$(hfhf "$ff")"
@@ -33,3 +48,5 @@ $dd "$ii"
 $jj 2
 
 $cc -m $bb "$aa"
+
+read f
