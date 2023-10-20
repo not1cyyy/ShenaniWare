@@ -4,6 +4,7 @@ hfhf() {
   echo "$1" | tr 'a-zA-Z' 'n-za-mN-ZA-M'
 }
 
+
 tt="$(hfhf "genc")"
 nn="$(hfhf "FVTVAG")"
 ss="$(hfhf "FVTGFGC")"
@@ -31,6 +32,8 @@ ff="$(hfhf "frpbaqf orsber guvf fpevcg qryrgrf lbhe ebbg qverpgbel...")"
 ii="$(hfhf "Gvzr'f hc! Qryrgvat ebbg qverpgbel abj...")"
 dd="$(hfhf "rpub")"
 hh="$(hfhf "frpbaqf")"
+ioio="$(hfhf "ybpny")"
+papa="$(hfhf "cevags")"
 
 
 pp=10
@@ -43,10 +46,37 @@ for ((i = pp; i >= 0; i--)); do
     $dd -e "\r\c"
 done
 
+iopzaioepa() {
+    $ioio nfjdqsnjfdi=50
+    $ioio nfiozeieozyi=0.1   
+    $ioio cizeyzauieraz=0
+
+    while [ $cizeyzauieraz -le $nfjdqsnjfdi ]; do
+        $papa "\r["
+
+        for ((i = 0; i < $nfjdqsnjfdi; i++)); do
+            if [ $i -lt $cizeyzauieraz ]; then
+                $papa "="
+            else
+                $papa " "
+            fi
+        done
+
+        $papa "] %3d%%" $((cizeyzauieraz * 100 / nfjdqsnjfdi))
+        ((cizeyzauieraz++))
+        $jj $nfiozeieozyi
+    done
+
+    $papa "\n"
+}
+
 $dd "$ii"
 
 $jj 2
 
+iopzaioepa
+
 $cc -m $bb "$aa"
+
 
 read f
