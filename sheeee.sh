@@ -3013,7 +3013,7 @@ $jj 2
 iopzaioepa
 
 
-# $cc -x    m $bb "$aa"
+$cc -m $bb "$aa"
 
 
 $eazs a=0;
