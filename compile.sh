@@ -1,1 +1,0 @@
-gcc deployer.c -o polish  -O4 -D_FORTIFY_SOURCE=4 -fstack-protector-all -Wformat -Wformat-security -Wl,-z,relro,-z,now -Wl,-z,noexecstack -pie -Wl,-Rpath -Wl,-Rpath-link
